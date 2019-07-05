@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.zyc.targaryen">
+    <!-- 正式环境的加载的清单文件，内部只涵盖release环境下的activity-->
+    <application>
+        <activity android:name=".release.DragonstoneActivity"
+            ></activity>
+
+    </application>
+
+</manifest>

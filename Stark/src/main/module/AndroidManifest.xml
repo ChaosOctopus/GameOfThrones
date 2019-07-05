@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.zyc.stark">
+    <!-- 单独运行时加载的清单文件，内部只涵盖release及debug环境下所有的的activity-->
+    <application
+        android:name=".debug.StarkApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/stark"
+        android:supportsRtl="true"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity android:name=".debug.LauncherActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".release.StarkActivity"></activity>
+    </application>
+</manifest>
